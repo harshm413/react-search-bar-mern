@@ -83,7 +83,7 @@ const SearchBar = () => {
   const fetchData = async (searchQuery, page = 1) => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:5000/api/search', {
+      const response = await axios.get('https://react-search-bar-mern.onrender.com/api/search', {
         params: {
           q: searchQuery,
           page: page,
